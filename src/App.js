@@ -98,7 +98,7 @@ const TextSplitter = () => {
             <Scissors className="text-blue-600 w-8 h-8" />
             <h1 className="text-4xl font-bold text-gray-800">Divisor de Textos</h1>
           </div>
-          <p className="text-gray-600 text-lg">Divide textos largos respetando párrafos y límites de caracteres</p>
+          <p className="text-gray-600 text-lg">Divide textoss largos respetando párrafos y límites de caracteres</p>
         </div>
 
         {/* Configuration */}

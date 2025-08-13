@@ -1,8 +1,20 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders text splitter app', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText(/divisor de textos/i);
+  expect(titleElement).toBeInTheDocument();
+});
+
+test('renders configuration section', () => {
+  render(<App />);
+  const configElement = screen.getByText(/configuración/i);
+  expect(configElement).toBeInTheDocument();
+});
+
+test('renders split button', () => {
+  render(<App />);
+  const buttonElement = screen.getByText(/dividir texto/i);
+  expect(buttonElement).toBeInTheDocument();
 });
